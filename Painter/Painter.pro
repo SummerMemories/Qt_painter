@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        interactive_view.cpp \
         main.cpp \
         widget.cpp
 
 HEADERS += \
+        interactive_view.h \
         widget.h
 
 FORMS += \
