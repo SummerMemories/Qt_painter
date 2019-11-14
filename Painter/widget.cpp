@@ -1,4 +1,4 @@
-#include "widget.h"
+﻿#include "widget.h"
 #include "ui_widget.h"
 #include <QGraphicsRectItem>
 
@@ -11,7 +11,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    this->showMaximized();
+    //this->showMaximized();
     m_thread = new LoadImg(&img1, &img2);
     m_thread->start();
 }

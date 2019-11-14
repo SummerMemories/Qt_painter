@@ -14,7 +14,6 @@
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,12 +23,10 @@ class Ui_Widget
 public:
     QHBoxLayout *horizontalLayout;
     QWidget *widget;
-    QHBoxLayout *horizontalLayout_2;
-    QVBoxLayout *verticalLayout;
     QPushButton *m_FontPicture;
     QPushButton *m_BackPicture;
-    QPushButton *m_PDF1;
     QPushButton *m_PDF2;
+    QPushButton *m_PDF1;
     QGraphicsView *ImageGraphic;
 
     void setupUi(QWidget *Widget)
@@ -41,6 +38,7 @@ public:
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(5, 5, 5, 0);
         widget = new QWidget(Widget);
         widget->setObjectName(QString::fromUtf8("widget"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -50,36 +48,27 @@ public:
         widget->setSizePolicy(sizePolicy);
         widget->setMinimumSize(QSize(0, 0));
         widget->setMaximumSize(QSize(16777215, 16777215));
-        horizontalLayout_2 = new QHBoxLayout(widget);
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         m_FontPicture = new QPushButton(widget);
         m_FontPicture->setObjectName(QString::fromUtf8("m_FontPicture"));
-
-        verticalLayout->addWidget(m_FontPicture);
-
+        m_FontPicture->setGeometry(QRect(30, 230, 93, 28));
         m_BackPicture = new QPushButton(widget);
         m_BackPicture->setObjectName(QString::fromUtf8("m_BackPicture"));
-
-        verticalLayout->addWidget(m_BackPicture);
-
-        m_PDF1 = new QPushButton(widget);
-        m_PDF1->setObjectName(QString::fromUtf8("m_PDF1"));
-
-        verticalLayout->addWidget(m_PDF1);
-
+        m_BackPicture->setGeometry(QRect(30, 270, 93, 28));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(m_BackPicture->sizePolicy().hasHeightForWidth());
+        m_BackPicture->setSizePolicy(sizePolicy1);
         m_PDF2 = new QPushButton(widget);
         m_PDF2->setObjectName(QString::fromUtf8("m_PDF2"));
-
-        verticalLayout->addWidget(m_PDF2);
-
-
-        horizontalLayout_2->addLayout(verticalLayout);
-
+        m_PDF2->setGeometry(QRect(30, 370, 93, 28));
+        sizePolicy1.setHeightForWidth(m_PDF2->sizePolicy().hasHeightForWidth());
+        m_PDF2->setSizePolicy(sizePolicy1);
+        m_PDF1 = new QPushButton(widget);
+        m_PDF1->setObjectName(QString::fromUtf8("m_PDF1"));
+        m_PDF1->setGeometry(QRect(30, 320, 93, 28));
+        sizePolicy1.setHeightForWidth(m_PDF1->sizePolicy().hasHeightForWidth());
+        m_PDF1->setSizePolicy(sizePolicy1);
 
         horizontalLayout->addWidget(widget);
 
@@ -88,6 +77,8 @@ public:
 
         horizontalLayout->addWidget(ImageGraphic);
 
+        horizontalLayout->setStretch(0, 2);
+        horizontalLayout->setStretch(1, 8);
 
         retranslateUi(Widget);
 
@@ -99,8 +90,8 @@ public:
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
         m_FontPicture->setText(QCoreApplication::translate("Widget", "\346\255\243\351\235\242\345\233\276", nullptr));
         m_BackPicture->setText(QCoreApplication::translate("Widget", "\350\203\214\351\235\242\345\233\276", nullptr));
-        m_PDF1->setText(QCoreApplication::translate("Widget", "PDF1", nullptr));
         m_PDF2->setText(QCoreApplication::translate("Widget", "PDF2", nullptr));
+        m_PDF1->setText(QCoreApplication::translate("Widget", "PDF1", nullptr));
     } // retranslateUi
 
 };
