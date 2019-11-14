@@ -11,11 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "interactive_view.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -26,17 +26,17 @@ public:
     QWidget *widget;
     QHBoxLayout *horizontalLayout_2;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    InteractiveView *graphicsView;
+    QPushButton *m_FontPicture;
+    QPushButton *m_BackPicture;
+    QPushButton *m_PDF1;
+    QPushButton *m_PDF2;
+    QGraphicsView *ImageGraphic;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(661, 428);
+        Widget->resize(756, 488);
         horizontalLayout = new QHBoxLayout(Widget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -57,25 +57,25 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        pushButton = new QPushButton(widget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        m_FontPicture = new QPushButton(widget);
+        m_FontPicture->setObjectName(QString::fromUtf8("m_FontPicture"));
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(m_FontPicture);
 
-        pushButton_2 = new QPushButton(widget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        m_BackPicture = new QPushButton(widget);
+        m_BackPicture->setObjectName(QString::fromUtf8("m_BackPicture"));
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(m_BackPicture);
 
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        m_PDF1 = new QPushButton(widget);
+        m_PDF1->setObjectName(QString::fromUtf8("m_PDF1"));
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(m_PDF1);
 
-        pushButton_4 = new QPushButton(widget);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        m_PDF2 = new QPushButton(widget);
+        m_PDF2->setObjectName(QString::fromUtf8("m_PDF2"));
 
-        verticalLayout->addWidget(pushButton_4);
+        verticalLayout->addWidget(m_PDF2);
 
 
         horizontalLayout_2->addLayout(verticalLayout);
@@ -83,10 +83,10 @@ public:
 
         horizontalLayout->addWidget(widget);
 
-        graphicsView = new InteractiveView(Widget);
-        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
+        ImageGraphic = new QGraphicsView(Widget);
+        ImageGraphic->setObjectName(QString::fromUtf8("ImageGraphic"));
 
-        horizontalLayout->addWidget(graphicsView);
+        horizontalLayout->addWidget(ImageGraphic);
 
 
         retranslateUi(Widget);
@@ -97,10 +97,10 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "\346\255\243\351\235\242\345\233\276", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Widget", "\350\203\214\351\235\242\345\233\276", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("Widget", "PDF1", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Widget", "PDF2", nullptr));
+        m_FontPicture->setText(QCoreApplication::translate("Widget", "\346\255\243\351\235\242\345\233\276", nullptr));
+        m_BackPicture->setText(QCoreApplication::translate("Widget", "\350\203\214\351\235\242\345\233\276", nullptr));
+        m_PDF1->setText(QCoreApplication::translate("Widget", "PDF1", nullptr));
+        m_PDF2->setText(QCoreApplication::translate("Widget", "PDF2", nullptr));
     } // retranslateUi
 
 };

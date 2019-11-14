@@ -1,8 +1,14 @@
 #ifndef WIDGET_H
 #define WIDGET_H
-
+#include "imagewidget.h"
+#include "backimage.h"
+#include "loadimg.h"
+#include <QUrl>
+#include <QDebug>
+#include <QDir>
 #include <QWidget>
 #include <QGraphicsScene>
+#include <QDesktopServices>
 
 QT_BEGIN_NAMESPACE
 class QGraphicsScene;
@@ -20,9 +26,25 @@ public:
     explicit Widget(QWidget *parent = nullptr);
     ~Widget();
 
+    void recvShowPicSignal(int num, QImage image);
+
+private slots:
+    void on_m_FontPicture_clicked();
+
+    void on_m_BackPicture_clicked();
+
+    void on_m_PDF1_clicked();
+
+    void on_m_PDF2_clicked();
+
 private:
     Ui::Widget *ui;
-    QGraphicsScene *m_scene;
+    ImageWidget *m_Image;
+    BackImage *m_Bimage;
+
+    QImage img1;
+    QImage img2;
+    LoadImg *m_thread;
 };
 
 #endif // WIDGET_H

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>661</width>
-    <height>428</height>
+    <width>756</width>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,28 +38,28 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="m_FontPicture">
           <property name="text">
            <string>正面图</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="m_BackPicture">
           <property name="text">
            <string>背面图</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="m_PDF1">
           <property name="text">
            <string>PDF1</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QPushButton" name="m_PDF2">
           <property name="text">
            <string>PDF2</string>
           </property>
@@ -71,18 +71,11 @@
     </widget>
    </item>
    <item>
-    <widget class="interactive_view" name="graphicsView"/>
+    <widget class="QGraphicsView" name="ImageGraphic"/>
    </item>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <customwidgets>
-  <customwidget>
-   <class>interactive_view</class>
-   <extends>QGraphicsView</extends>
-   <header>interactive_view.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
