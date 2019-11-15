@@ -38,6 +38,8 @@ private:
     QPointF m_startPos;
 
     QFont font;
+    double PositionX1;
+    double PositionX2;
     int judge[50];
     int ClickCount[50];
 };
