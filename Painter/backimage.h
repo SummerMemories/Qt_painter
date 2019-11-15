@@ -38,10 +38,10 @@ private:
     QPointF m_startPos;
 
     QFont font;
-    double PositionX1;
-    double PositionX2;
-    int judge[50];
-    int ClickCount[50];
+    int PositionX1;
+    int PositionX2;
+    int judge[150];
+    int ClickCount[150];
 };
 
 #endif // BACKIMAGE_H

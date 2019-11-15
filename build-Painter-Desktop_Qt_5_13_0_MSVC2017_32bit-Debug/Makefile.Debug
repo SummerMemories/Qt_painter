@@ -183,7 +183,6 @@ debug\qrc_resource.obj: ..\Painter\resource.qrc \
 		..\Painter\resource\min_normal.png \
 		..\Painter\resource\close_press.png \
 		..\Painter\resource\close_hover.png \
-		..\Painter\resource\???????????????2019.pdf \
 		..\Painter\resource\min_press.png \
 		..\Painter\resource\2.jpg \
 		..\Painter\resource\close_normal.png \
@@ -546,6 +545,7 @@ debug\moc_widget.cpp: ..\Painter\widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicssceneevent.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsitem.h \
+		..\Painter\backimage.h \
 		..\Painter\loadimg.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QThread \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QUrl \
@@ -925,31 +925,13 @@ debug\backimage.obj: ..\Painter\backimage.cpp ..\Painter\backimage.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsitem.h \
 		ui_widget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QVariant \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QApplication \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qapplication.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdesktopwidget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsView \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsview.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsscene.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QHBoxLayout \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qboxlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayoutitem.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgridlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QPushButton \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qpushbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QVBoxLayout \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QDebug \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsSceneMouseEvent \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsSceneDragDropEvent \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtGui\QDrag \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QLabel \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h
 
 debug\imagewidget.obj: ..\Painter\imagewidget.cpp ..\Painter\imagewidget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QWidget \
@@ -1295,31 +1277,13 @@ debug\imagewidget.obj: ..\Painter\imagewidget.cpp ..\Painter\imagewidget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsitem.h \
 		ui_widget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QVariant \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QApplication \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qapplication.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdesktopwidget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsView \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsview.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsscene.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QHBoxLayout \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qboxlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayoutitem.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgridlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QPushButton \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qpushbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QVBoxLayout \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QDebug \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsSceneMouseEvent \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsSceneDragDropEvent \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtGui\QDrag \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QLabel \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h
 
 debug\loadimg.obj: ..\Painter\loadimg.cpp ..\Painter\loadimg.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QThread \
@@ -1742,6 +1706,7 @@ debug\main.obj: ..\Painter\main.cpp ..\Painter\widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicssceneevent.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsitem.h \
+		..\Painter\backimage.h \
 		..\Painter\loadimg.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QThread \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QUrl \
@@ -2098,6 +2063,7 @@ debug\widget.obj: ..\Painter\widget.cpp ..\Painter\widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicssceneevent.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsitem.h \
+		..\Painter\backimage.h \
 		..\Painter\loadimg.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QThread \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QUrl \
@@ -2107,30 +2073,13 @@ debug\widget.obj: ..\Painter\widget.cpp ..\Painter\widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsscene.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtGui\QDesktopServices \
 		ui_widget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtCore\QVariant \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QApplication \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qapplication.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdesktopwidget.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsView \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgraphicsview.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractscrollarea.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QHBoxLayout \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qboxlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlayoutitem.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qgridlayout.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QPushButton \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qpushbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qabstractbutton.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QVBoxLayout \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsRectItem \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QFileDialog \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qfiledialog.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdialog.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QLabel \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h
 
 debug\moc_widget.obj: debug\moc_widget.cpp 
 

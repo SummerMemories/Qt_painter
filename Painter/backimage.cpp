@@ -17,9 +17,9 @@ BackImage::BackImage(QPixmap *pixmap)
     m_scaleValue = 0;
     m_scaleDafault = 0;
     m_isMove = false;
-    PositionX1 = -231.121;
-    PositionX2 = 987.892;
-    for(int i = 0; i < 50; i++)
+    PositionX1 = -231;
+    PositionX2 = 987;
+    for(int i = 0; i < 150; i++)
     {
         judge[i] = 0;
         ClickCount[i] = 0;
@@ -41,6 +41,7 @@ void BackImage::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
     painter->setPen(RGB(250,206,135));
     painter->setFont(font1);
     /***********************左边图纸显示文字**********************/
+
     if(judge[0] == 1 && ClickCount[0] % 2 == 1)
     {
         //painter->setPen(QPen(Qt::white,4,Qt::SolidLine));
@@ -49,186 +50,430 @@ void BackImage::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
         //painter->setPen(RGB(250,206,135));
         painter->drawText(-231.121,-1675,QString::fromLocal8Bit("直流电源"));
     }
-    else if(judge[1] == 1 && ClickCount[1] % 2 == 1)
+    if(judge[1] == 1 && ClickCount[1] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1646.74,QString::fromLocal8Bit("1"));
+        painter->drawText(PositionX1,-1646,QString::fromLocal8Bit("1"));
     }
-    else if(judge[2] == 1 && ClickCount[2] % 2 == 1)
+    if(judge[2] == 1 && ClickCount[2] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1562.11,QString::fromLocal8Bit("3"));
+        painter->drawText(PositionX1,-1562,QString::fromLocal8Bit("3"));
     }
-    else if(judge[3] == 1 && ClickCount[3] % 2 == 1)
+    if(judge[3] == 1 && ClickCount[3] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1515.47,QString::fromLocal8Bit("强电开入"));
+        painter->drawText(PositionX1,-1515,QString::fromLocal8Bit("强电开入"));
     }
-    else if(judge[4] == 1 && ClickCount[4] % 2 == 1)
+    if(judge[4] == 1 && ClickCount[4] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1489.33,QString::fromLocal8Bit("装置电源正"));
+        painter->drawText(PositionX1,-1489,QString::fromLocal8Bit("装置电源正"));
     }
     else if(judge[5] == 1 && ClickCount[5] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1407.79,QString::fromLocal8Bit("变低联跳开入"));
+        painter->drawText(PositionX1,-1407,QString::fromLocal8Bit("变低联跳开入"));
     }
-    else if(judge[6] == 1 && ClickCount[6] % 2 == 1)
+    if(judge[6] == 1 && ClickCount[6] % 2 == 1)
     {
         painter->drawText(PositionX1,-1387.29,QString::fromLocal8Bit("变低联跳开入2"));
     }
-    else if(judge[7] == 1 && ClickCount[7] % 2 == 1)
+    if(judge[7] == 1 && ClickCount[7] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1341.9,QString::fromLocal8Bit("装置电源负"));
+        painter->drawText(PositionX1,-1341,QString::fromLocal8Bit("装置电源负"));
     }
-    else if(judge[8] == 1 && ClickCount[8] % 2 == 1)
+    if(judge[8] == 1 && ClickCount[8] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1321.4,QString::fromLocal8Bit("装置电源负"));
+        painter->drawText(PositionX1,-1321,QString::fromLocal8Bit("装置电源负"));
     }
-    else if(judge[9] == 1 && ClickCount[9] % 2 == 1)
+    if(judge[9] == 1 && ClickCount[9] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1273.39,QString::fromLocal8Bit("支路2出口"));
+        painter->drawText(PositionX1,-1273,QString::fromLocal8Bit("支路2出口"));
     }
-    else if(judge[10] == 1 && ClickCount[10] % 2 == 1)
+    if(judge[10] == 1 && ClickCount[10] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1254.16,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-1254,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[11] == 1 && ClickCount[11] % 2 == 1)
+    if(judge[11] == 1 && ClickCount[11] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1215.7,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-1215,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[12] == 1 && ClickCount[12] % 2 == 1)
+    if(judge[12] == 1 && ClickCount[12] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1187.43,QString::fromLocal8Bit("支路3出口"));
+        painter->drawText(PositionX1,-1187,QString::fromLocal8Bit("支路3出口"));
     }
-    else if(judge[13] == 1 && ClickCount[13] % 2 == 1)
+    if(judge[13] == 1 && ClickCount[13] % 2 == 1)
     {
         painter->drawText(PositionX1,-1166.07,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[14] == 1 && ClickCount[14] % 2 == 1)
+    if(judge[14] == 1 && ClickCount[14] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1128.27,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-1128,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[15] == 1 && ClickCount[15] % 2 == 1)
+    if(judge[15] == 1 && ClickCount[15] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1106.9,QString::fromLocal8Bit("支路4出口"));
+        painter->drawText(PositionX1,-1106,QString::fromLocal8Bit("支路4出口"));
     }
-    else if(judge[16] == 1 && ClickCount[16] % 2 == 1)
+    if(judge[16] == 1 && ClickCount[16] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1085.54,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-1085,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[17] == 1 && ClickCount[17] % 2 == 1)
+    if(judge[17] == 1 && ClickCount[17] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1041.17,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-1041,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[18] == 1 && ClickCount[18] % 2 == 1)
+    if(judge[18] == 1 && ClickCount[18] % 2 == 1)
     {
-        painter->drawText(PositionX1,-1012.41,QString::fromLocal8Bit("支路5出口"));
+        painter->drawText(PositionX1,-1012,QString::fromLocal8Bit("支路5出口"));
     }
-    else if(judge[19] == 1 && ClickCount[19] % 2 == 1)
+    if(judge[19] == 1 && ClickCount[19] % 2 == 1)
     {
-        painter->drawText(PositionX1,-996.825,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-996,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[20] == 1 && ClickCount[20] % 2 == 1)
+    if(judge[20] == 1 && ClickCount[20] % 2 == 1)
     {
-        painter->drawText(PositionX1,-957.874,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-957,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[21] == 1 && ClickCount[21] % 2 == 1)
+    if(judge[21] == 1 && ClickCount[21] % 2 == 1)
     {
-        painter->drawText(PositionX1,-928.011,QString::fromLocal8Bit("支路6出口"));
+        painter->drawText(PositionX1,-928,QString::fromLocal8Bit("支路6出口"));
     }
-    else if(judge[22] == 1 && ClickCount[22] % 2 == 1)
+    if(judge[22] == 1 && ClickCount[22] % 2 == 1)
     {
-        painter->drawText(PositionX1,-911.132,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-911,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[23] == 1 && ClickCount[23] % 2 == 1)
+    if(judge[23] == 1 && ClickCount[23] % 2 == 1)
     {
-        painter->drawText(PositionX1,-869.584,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-869,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[24] == 1 && ClickCount[24] % 2 == 1)
+    if(judge[24] == 1 && ClickCount[24] % 2 == 1)
     {
-        painter->drawText(PositionX1,-847.511,QString::fromLocal8Bit("支路7出口"));
+        painter->drawText(PositionX1,-847,QString::fromLocal8Bit("支路7出口"));
     }
-    else if(judge[25] == 1 && ClickCount[25] % 2 == 1)
+    if(judge[25] == 1 && ClickCount[25] % 2 == 1)
     {
-        painter->drawText(PositionX1,-824.14,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-824,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[26] == 1 && ClickCount[26] % 2 == 1)
+    if(judge[26] == 1 && ClickCount[26] % 2 == 1)
     {
-        painter->drawText(PositionX1,-779.221,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-779,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[27] == 1 && ClickCount[27] % 2 == 1)
+    if(judge[27] == 1 && ClickCount[27] % 2 == 1)
     {
-        painter->drawText(PositionX1,-759.221,QString::fromLocal8Bit("支路8出口"));
+        painter->drawText(PositionX1,-759,QString::fromLocal8Bit("支路8出口"));
     }
-    else if(judge[28] == 1 && ClickCount[28] % 2 == 1)
+    if(judge[28] == 1 && ClickCount[28] % 2 == 1)
     {
-        painter->drawText(PositionX1,-737.149,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-737,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[29] == 1 && ClickCount[29] % 2 == 1)
+    if(judge[29] == 1 && ClickCount[29] % 2 == 1)
     {
-        painter->drawText(PositionX1,-699.496,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-699,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[30] == 1 && ClickCount[30] % 2 == 1)
+    if(judge[30] == 1 && ClickCount[30] % 2 == 1)
     {
-        painter->drawText(PositionX1,-672.23,QString::fromLocal8Bit("支路9出口"));
+        painter->drawText(PositionX1,-672,QString::fromLocal8Bit("支路9出口"));
     }
-    else if(judge[31] == 1 && ClickCount[31] % 2 == 1)
+    if(judge[31] == 1 && ClickCount[31] % 2 == 1)
     {
-        painter->drawText(PositionX1,-654.053,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-654,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[32] == 1 && ClickCount[32] % 2 == 1)
+    if(judge[32] == 1 && ClickCount[32] % 2 == 1)
     {
-        painter->drawText(PositionX1,-611.206,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-611,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[33] == 1 && ClickCount[33] % 2 == 1)
+    if(judge[33] == 1 && ClickCount[33] % 2 == 1)
     {
-        painter->drawText(PositionX1,-583.94,QString::fromLocal8Bit("支路10出口"));
+        painter->drawText(PositionX1,-583,QString::fromLocal8Bit("支路10出口"));
     }
-    else if(judge[34] == 1 && ClickCount[34] % 2 == 1)
+    if(judge[34] == 1 && ClickCount[34] % 2 == 1)
     {
-        painter->drawText(PositionX1,-569.658,QString::fromLocal8Bit("跳闸+"));
+        painter->drawText(PositionX1,-569,QString::fromLocal8Bit("跳闸+"));
     }
-    else if(judge[35] == 1 && ClickCount[35] % 2 == 1)
+    if(judge[35] == 1 && ClickCount[35] % 2 == 1)
     {
-        painter->drawText(PositionX1,-525.513,QString::fromLocal8Bit("跳闸-"));
+        painter->drawText(PositionX1,-525,QString::fromLocal8Bit("跳闸-"));
     }
-    else if(judge[36] == 1 && ClickCount[36] % 2 == 1)
+    if(judge[36] == 1 && ClickCount[36] % 2 == 1)
     {
-        painter->drawText(PositionX1,-499.545,QString::fromLocal8Bit("备用端子"));
+        painter->drawText(PositionX1,-499,QString::fromLocal8Bit("备用端子"));
     }
 
 
     /***********************右边图纸显示文字**********************/
-    else if(judge[37] == 1 && ClickCount[37] % 2 == 1)
+
+    if(judge[37] == 1 && ClickCount[37] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1671.56,QString::fromLocal8Bit("交流电压"));
+        painter->drawText(PositionX2,-1671,QString::fromLocal8Bit("交流电压"));
     }
-    else if(judge[38] == 1 && ClickCount[38] % 2 == 1)
+    if(judge[38] == 1 && ClickCount[38] % 2 == 1)
     {
         painter->drawText(PositionX2,-1651,QString::fromLocal8Bit("UA空开前"));
     }
-    else if(judge[39] == 1 && ClickCount[39] % 2 == 1)
+    if(judge[39] == 1 && ClickCount[39] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1629.72,QString::fromLocal8Bit("UB"));
+        painter->drawText(PositionX2,-1629,QString::fromLocal8Bit("UB"));
     }
-    else if(judge[40] == 1 && ClickCount[40] % 2 == 1)
+    if(judge[40] == 1 && ClickCount[40] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1606.14,QString::fromLocal8Bit("UC"));
+        painter->drawText(PositionX2,-1606,QString::fromLocal8Bit("UC"));
     }
-    else if(judge[41] == 1 && ClickCount[41] % 2 == 1)
+    if(judge[41] == 1 && ClickCount[41] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1564.41,QString::fromLocal8Bit("UN"));
+        painter->drawText(PositionX2,-1564,QString::fromLocal8Bit("UN"));
     }
-    else if(judge[42] == 1 && ClickCount[42] % 2 == 1)
+    if(judge[42] == 1 && ClickCount[42] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1522.25,QString::fromLocal8Bit("UA空开后"));
+        painter->drawText(PositionX2,-1522,QString::fromLocal8Bit("UA空开后"));
     }
-    else if(judge[43] == 1 && ClickCount[43] % 2 == 1)
+    if(judge[43] == 1 && ClickCount[43] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1501.14,QString::fromLocal8Bit("UB"));
+        painter->drawText(PositionX2,-1501,QString::fromLocal8Bit("UB"));
     }
-    else if(judge[44] == 1 && ClickCount[44] % 2 == 1)
+    if(judge[44] == 1 && ClickCount[44] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1478.38,QString::fromLocal8Bit("UC"));
+        painter->drawText(PositionX2,-1478,QString::fromLocal8Bit("UC"));
     }
 
+
+    if(judge[45] == 1 && ClickCount[45] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1450,QString::fromLocal8Bit("支路2交流电流"));
+    }
+    if(judge[46] == 1 && ClickCount[46] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1430,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[47] == 1 && ClickCount[47] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1410,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[48] == 1 && ClickCount[48] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1390,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[49] == 1 && ClickCount[49] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1370,QString::fromLocal8Bit("IA "));
+    }
+    if(judge[50] == 1 && ClickCount[50] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1345,QString::fromLocal8Bit("IB "));
+    }
+    if(judge[51] == 1 && ClickCount[51] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1325,QString::fromLocal8Bit("IC "));
+    }
+
+
+    if(judge[52] == 1 && ClickCount[52] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1305,QString::fromLocal8Bit("支路3交流电流"));
+    }
+    if(judge[53] == 1 && ClickCount[53] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1280,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[54] == 1 && ClickCount[54] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1260,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[55] == 1 && ClickCount[55] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1230,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[56] == 1 && ClickCount[56] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1210,QString::fromLocal8Bit("IA' "));
+    }
+    if(judge[57] == 1 && ClickCount[57] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1200,QString::fromLocal8Bit("IB' "));
+    }
+    if(judge[58] == 1 && ClickCount[58] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1175,QString::fromLocal8Bit("IC' "));
+    }
+
+
+
+
+
+    if(judge[59] == 1 && ClickCount[59] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-95,QString::fromLocal8Bit("中央信号"));
+    }
+    if(judge[60] == 1 && ClickCount[60] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-78,QString::fromLocal8Bit("+XM"));
+    }
+    if(judge[61] == 1 && ClickCount[61] % 2 == 1)
+    {
+        painter->drawText(PositionX2,34,QString::fromLocal8Bit("母线差动动作"));
+    }
+    if(judge[62] == 1 && ClickCount[62] % 2 == 1)
+    {
+        painter->drawText(PositionX2,55,QString::fromLocal8Bit("CT/PT短线警告"));
+    }
+    if(judge[63] == 1 && ClickCount[63] % 2 == 1)
+    {
+        painter->drawText(PositionX2,75,QString::fromLocal8Bit("隔离开关位置警告"));
+    }
+    if(judge[64] == 1 && ClickCount[64] % 2 == 1)
+    {
+        painter->drawText(PositionX2,95,QString::fromLocal8Bit("运行异常警告"));
+    }
+    if(judge[65] == 1 && ClickCount[65] % 2 == 1)
+    {
+        painter->drawText(PositionX2,119,QString::fromLocal8Bit("装置故障警告"));
+    }
+    if(judge[66] == 1 && ClickCount[66] % 2 == 1)
+    {
+        painter->drawText(PositionX2,139,QString::fromLocal8Bit("装置故障警告"));
+    }
+
+
+    if(judge[67] == 1 && ClickCount[67] % 2 == 1)
+    {
+        painter->drawText(PositionX2,499,QString::fromLocal8Bit("遥信"));
+    }
+    if(judge[68] == 1 && ClickCount[68] % 2 == 1)
+    {
+        painter->drawText(PositionX2,515,QString::fromLocal8Bit("公共端"));
+    }
+    if(judge[69] == 1 && ClickCount[69] % 2 == 1)
+    {
+        painter->drawText(PositionX2,632,QString::fromLocal8Bit("母线差动动作"));
+    }
+    if(judge[70] == 1 && ClickCount[70] % 2 == 1)
+    {
+        painter->drawText(PositionX2,649,QString::fromLocal8Bit("CT/PT断线警告"));
+    }
+    if(judge[71] == 1 && ClickCount[71] % 2 == 1)
+    {
+        painter->drawText(PositionX2,689,QString::fromLocal8Bit("运行异常警告"));
+    }
+    if(judge[72] == 1 && ClickCount[72] % 2 == 1)
+    {
+        painter->drawText(PositionX2,715,QString::fromLocal8Bit("装置故障警告"));
+    }
+    if(judge[73] == 1 && ClickCount[73] % 2 == 1)
+    {
+        painter->drawText(PositionX2,735,QString::fromLocal8Bit("装置故障警告"));
+    }
+    if(judge[74] == 1 && ClickCount[74] % 2 == 1)
+    {
+        painter->drawText(PositionX2,755,QString::fromLocal8Bit("直流1消0"));
+    }
+    if(judge[75] == 1 && ClickCount[75] % 2 == 1)
+    {
+        painter->drawText(PositionX2,775,QString::fromLocal8Bit("直流2消0"));
+    }
+
+
+    if(judge[76] == 1 && ClickCount[76] % 2 == 1)
+    {
+        painter->drawText(PositionX2,199,QString::fromLocal8Bit("遥信"));
+    }
+    if(judge[77] == 1 && ClickCount[77] % 2 == 1)
+    {
+        painter->drawText(PositionX2,215,QString::fromLocal8Bit("公共端"));
+    }
+    if(judge[78] == 1 && ClickCount[78] % 2 == 1)
+    {
+        painter->drawText(PositionX2,326,QString::fromLocal8Bit("母线差动动作"));
+    }
+    if(judge[79] == 1 && ClickCount[79] % 2 == 1)
+    {
+        painter->drawText(PositionX2,349,QString::fromLocal8Bit("CT/PT断线警告"));
+    }
+    if(judge[80] == 1 && ClickCount[80] % 2 == 1)
+    {
+        painter->drawText(PositionX2,389,QString::fromLocal8Bit("运行异常警告"));
+    }
+    if(judge[81] == 1 && ClickCount[81] % 2 == 1)
+    {
+        painter->drawText(PositionX2,415,QString::fromLocal8Bit("装置故障警告"));
+    }
+    if(judge[82] == 1 && ClickCount[82] % 2 == 1)
+    {
+        painter->drawText(PositionX2,435,QString::fromLocal8Bit("装置故障警告"));
+    }
+    if(judge[83] == 1 && ClickCount[83] % 2 == 1)
+    {
+        painter->drawText(PositionX2,455,QString::fromLocal8Bit("直流1消0"));
+    }
+    if(judge[84] == 1 && ClickCount[84] % 2 == 1)
+    {
+        painter->drawText(PositionX2,475,QString::fromLocal8Bit("直流2消0"));
+    }
+
+
+    if(judge[85] == 1 && ClickCount[85] % 2 == 1)
+    {
+        painter->drawText(PositionX2,802,QString::fromLocal8Bit("录波"));
+    }
+    if(judge[86] == 1 && ClickCount[86] % 2 == 1)
+    {
+        painter->drawText(PositionX2,826,QString::fromLocal8Bit("公共端"));
+    }
+    if(judge[87] == 1 && ClickCount[87] % 2 == 1)
+    {
+        painter->drawText(PositionX2,888,QString::fromLocal8Bit("母线差动动作"));
+    }
+
+
+    if(judge[88] == 1 && ClickCount[88] % 2 == 1)
+    {
+        painter->drawText(PositionX2,909,QString::fromLocal8Bit("监控通信"));
+    }
+    if(judge[89] == 1 && ClickCount[89] % 2 == 1)
+    {
+        painter->drawText(PositionX2,927,QString::fromLocal8Bit("打印发"));
+    }
+    if(judge[90] == 1 && ClickCount[90] % 2 == 1)
+    {
+        painter->drawText(PositionX2,950,QString::fromLocal8Bit("打印收"));
+    }
+    if(judge[91] == 1 && ClickCount[91] % 2 == 1)
+    {
+        painter->drawText(PositionX2,978,QString::fromLocal8Bit("打印地"));
+    }
+    if(judge[92] == 1 && ClickCount[92] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1014,QString::fromLocal8Bit("485-1A"));
+    }
+    if(judge[93] == 1 && ClickCount[93] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1036,QString::fromLocal8Bit("485-1B"));
+    }
+    if(judge[94] == 1 && ClickCount[94] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1122,QString::fromLocal8Bit("B码对时+"));
+    }
+    if(judge[95] == 1 && ClickCount[95] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1162,QString::fromLocal8Bit("B码对时-"));
+    }
+
+    if(judge[96] == 1 && ClickCount[96] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1185,QString::fromLocal8Bit("交流电源"));
+    }
+    if(judge[97] == 1 && ClickCount[97] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1206,QString::fromLocal8Bit("~220V火线"));
+    }
+    if(judge[98] == 1 && ClickCount[98] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1275,QString::fromLocal8Bit("~220V零线"));
+    }
+    if(judge[99] == 1 && ClickCount[99] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1336,QString::fromLocal8Bit("接地"));
+    }
+
+
+    if(judge[100] == 1 && ClickCount[100] % 2 == 1)
+    {
+        painter->drawText(PositionX2,1377,QString::fromLocal8Bit("备用端子"));
+    }
 }
 
 void BackImage::mousePressEvent(QGraphicsSceneMouseEvent *event)
@@ -240,6 +485,7 @@ void BackImage::mousePressEvent(QGraphicsSceneMouseEvent *event)
         qDebug()<< event->pos().y();
 
         /**********************左边图纸点击事件定位******************/
+
         if(event->pos().x()>=-359 && event->pos().x()<=-323 && event->pos().y()>= -1688 && event->pos().y() <= -1665)
         {
             judge[0] = 1;
@@ -468,6 +714,7 @@ void BackImage::mousePressEvent(QGraphicsSceneMouseEvent *event)
 
 
         /**********************右边图纸点击事件定位******************/
+
         if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -1693.72 && event->pos().y() <= -1670.72)
         {
             judge[37] = 1;
@@ -514,6 +761,363 @@ void BackImage::mousePressEvent(QGraphicsSceneMouseEvent *event)
         {
             judge[44] = 1;
             ClickCount[44]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -1476.49 && event->pos().y() <= -1456.49)
+        {
+            judge[45] = 1;
+            ClickCount[45]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1455.2 && event->pos().y() <= -1435.2)
+        {
+            judge[46] = 1;
+            ClickCount[46]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1434.71 && event->pos().y() <= -1413.71)
+        {
+            judge[47] = 1;
+            ClickCount[47]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1412.85 && event->pos().y() <= -1392.85)
+        {
+            judge[48] = 1;
+            ClickCount[48]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1392 && event->pos().y() <= -1371.73)
+        {
+            judge[49] = 1;
+            ClickCount[49]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1369.41 && event->pos().y() <= -1350.01)
+        {
+            judge[50] = 1;
+            ClickCount[50]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1348.85 && event->pos().y() <= -1328.85)
+        {
+            judge[51] = 1;
+            ClickCount[51]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -1326.8 && event->pos().y() <= -1306.14)
+        {
+            judge[52] = 1;
+            ClickCount[52]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1305.32 && event->pos().y() <= -1285.84)
+        {
+            judge[53] = 1;
+            ClickCount[53]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1284.26 && event->pos().y() <= -1264.26)
+        {
+            judge[54] = 1;
+            ClickCount[54]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1262.41 && event->pos().y() <= -1242.41)
+        {
+            judge[55] = 1;
+            ClickCount[55]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1241.61 && event->pos().y() <= -1221.61)
+        {
+            judge[56] = 1;
+            ClickCount[56]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1220.02 && event->pos().y() <= -1200.02)
+        {
+            judge[57] = 1;
+            ClickCount[57]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1198.43 && event->pos().y() <= -1178.43)
+        {
+            judge[58] = 1;
+            ClickCount[58]++;
+            update();
+        }
+
+
+
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= -125.673 && event->pos().y() <= -105.354)
+        {
+            judge[59] = 1;
+            ClickCount[59]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= -103.835 && event->pos().y() <= -84.1954)
+        {
+            judge[60] = 1;
+            ClickCount[60]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 2.6543 && event->pos().y() <= 24.7851)
+        {
+            judge[61] = 1;
+            ClickCount[61]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 24.7311 && event->pos().y() <= 44.703)
+        {
+            judge[62] = 1;
+            ClickCount[62]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 46.4915 && event->pos().y() <= 66.1653)
+        {
+            judge[63] = 1;
+            ClickCount[63]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 67.0596 && event->pos().y() <= 87.6276)
+        {
+            judge[64] = 1;
+            ClickCount[64]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 88.9189 && event->pos().y() <= 108.108)
+        {
+            judge[65] = 1;
+            ClickCount[65]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 110.121 && event->pos().y() <= 130.121)
+        {
+            judge[66] = 1;
+            ClickCount[66]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 475.121 && event->pos().y() <= 494.121)
+        {
+            judge[67] = 1;
+            ClickCount[67]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 495.121 && event->pos().y() <= 516.121)
+        {
+            judge[68] = 1;
+            ClickCount[68]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 604.121 && event->pos().y() <= 624.121)
+        {
+            judge[69] = 1;
+            ClickCount[69]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 625.121 && event->pos().y() <= 645.121)
+        {
+            judge[70] = 1;
+            ClickCount[70]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 669.121 && event->pos().y() <= 689.121)
+        {
+            judge[71] = 1;
+            ClickCount[71]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 690.121 && event->pos().y() <= 709.121)
+        {
+            judge[72] = 1;
+            ClickCount[72]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 711.121 && event->pos().y() <= 731.121)
+        {
+            judge[73] = 1;
+            ClickCount[73]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 733.121 && event->pos().y() <= 753.121)
+        {
+            judge[74] = 1;
+            ClickCount[74]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 755.121 && event->pos().y() <= 775.121)
+        {
+            judge[75] = 1;
+            ClickCount[75]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 174.121 && event->pos().y() <= 194.121)
+        {
+            judge[76] = 1;
+            ClickCount[76]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 196.121 && event->pos().y() <= 216.121)
+        {
+            judge[77] = 1;
+            ClickCount[77]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 302.121 && event->pos().y() <= 322.121)
+        {
+            judge[78] = 1;
+            ClickCount[78]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 324.121 && event->pos().y() <= 344.121)
+        {
+            judge[79] = 1;
+            ClickCount[79]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 367.121 && event->pos().y() <= 387.121)
+        {
+            judge[80] = 1;
+            ClickCount[80]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 389.121 && event->pos().y() <= 409.121)
+        {
+            judge[81] = 1;
+            ClickCount[81]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 411.121 && event->pos().y() <= 431.121)
+        {
+            judge[82] = 1;
+            ClickCount[82]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 433.121 && event->pos().y() <= 453.121)
+        {
+            judge[83] = 1;
+            ClickCount[83]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 455.121 && event->pos().y() <= 475.121)
+        {
+            judge[84] = 1;
+            ClickCount[84]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 776.121 && event->pos().y() <= 796.121)
+        {
+            judge[85] = 1;
+            ClickCount[85]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 798.121 && event->pos().y() <= 818.121)
+        {
+            judge[86] = 1;
+            ClickCount[86]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 861.121 && event->pos().y() <= 881.121)
+        {
+            judge[87] = 1;
+            ClickCount[87]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 885.121 && event->pos().y() <= 905.121)
+        {
+            judge[88] = 1;
+            ClickCount[88]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 907.121 && event->pos().y() <= 927.121)
+        {
+            judge[89] = 1;
+            ClickCount[89]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 927.121 && event->pos().y() <= 947.121)
+        {
+            judge[90] = 1;
+            ClickCount[90]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 949.121 && event->pos().y() <= 969.121)
+        {
+            judge[91] = 1;
+            ClickCount[91]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 992.121 && event->pos().y() <= 1012.121)
+        {
+            judge[92] = 1;
+            ClickCount[92]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1014.121 && event->pos().y() <= 1034.121)
+        {
+            judge[93] = 1;
+            ClickCount[93]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1098.121 && event->pos().y() <= 1118.121)
+        {
+            judge[94] = 1;
+            ClickCount[94]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1141.121 && event->pos().y() <= 1161.121)
+        {
+            judge[95] = 1;
+            ClickCount[95]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 1162.121 && event->pos().y() <= 1182.121)
+        {
+            judge[96] = 1;
+            ClickCount[96]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1183.121 && event->pos().y() <= 1203.121)
+        {
+            judge[97] = 1;
+            ClickCount[97]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1247.121 && event->pos().y() <= 1267.121)
+        {
+            judge[98] = 1;
+            ClickCount[98]++;
+            update();
+        }
+        if(event->pos().x()>=812 && event->pos().x()<=873 && event->pos().y()>= 1312.121 && event->pos().y() <= 1332.121)
+        {
+            judge[99] = 1;
+            ClickCount[99]++;
+            update();
+        }
+
+
+        if(event->pos().x()>=789 && event->pos().x()<=898 && event->pos().y()>= 1355.121 && event->pos().y() <= 1375.121)
+        {
+            judge[100] = 1;
+            ClickCount[100]++;
             update();
         }
 
