@@ -250,15 +250,15 @@ void BackImage::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
     }
     if(judge[49] == 1 && ClickCount[49] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1370,QString::fromLocal8Bit("IA "));
+        painter->drawText(PositionX2,-1370,QString::fromLocal8Bit("IA'"));
     }
     if(judge[50] == 1 && ClickCount[50] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1345,QString::fromLocal8Bit("IB "));
+        painter->drawText(PositionX2,-1345,QString::fromLocal8Bit("IB'"));
     }
     if(judge[51] == 1 && ClickCount[51] % 2 == 1)
     {
-        painter->drawText(PositionX2,-1325,QString::fromLocal8Bit("IC "));
+        painter->drawText(PositionX2,-1325,QString::fromLocal8Bit("IC'"));
     }
 
 
@@ -473,6 +473,213 @@ void BackImage::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
     if(judge[100] == 1 && ClickCount[100] % 2 == 1)
     {
         painter->drawText(PositionX2,1377,QString::fromLocal8Bit("备用端子"));
+    }
+
+
+    if(judge[101] == 1 && ClickCount[101] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1155,QString::fromLocal8Bit("支路4交流电流"));
+    }
+    if(judge[102] == 1 && ClickCount[102] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1133,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[103] == 1 && ClickCount[103] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1110,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[104] == 1 && ClickCount[104] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1088,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[105] == 1 && ClickCount[105] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1065,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[106] == 1 && ClickCount[106] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1045,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[107] == 1 && ClickCount[107] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1023,QString::fromLocal8Bit("IC'"));
+    }
+
+
+    if(judge[108] == 1 && ClickCount[108] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-1001,QString::fromLocal8Bit("支路5交流电流"));
+    }
+    if(judge[109] == 1 && ClickCount[109] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-981,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[110] == 1 && ClickCount[110] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-961,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[111] == 1 && ClickCount[111] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-935,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[112] == 1 && ClickCount[112] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-916,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[113] == 1 && ClickCount[113] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-894,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[114] == 1 && ClickCount[114] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-874,QString::fromLocal8Bit("IC'"));
+    }
+
+
+    if(judge[115] == 1 && ClickCount[115] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-852,QString::fromLocal8Bit("支路6交流电流"));
+    }
+    if(judge[116] == 1 && ClickCount[116] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-832,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[117] == 1 && ClickCount[117] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-810,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[118] == 1 && ClickCount[118] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-788,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[119] == 1 && ClickCount[119] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-766,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[120] == 1 && ClickCount[120] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-746,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[121] == 1 && ClickCount[121] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-724,QString::fromLocal8Bit("IC'"));
+    }
+
+    if(judge[122] == 1 && ClickCount[122] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-701,QString::fromLocal8Bit("支路7交流电流"));
+    }
+    if(judge[123] == 1 && ClickCount[123] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-681,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[124] == 1 && ClickCount[124] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-660,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[125] == 1 && ClickCount[125] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-638,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[126] == 1 && ClickCount[126] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-618,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[127] == 1 && ClickCount[127] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-598,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[128] == 1 && ClickCount[128] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-578,QString::fromLocal8Bit("IC'"));
+    }
+
+
+    if(judge[129] == 1 && ClickCount[129] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-552,QString::fromLocal8Bit("支路8交流电流"));
+    }
+    if(judge[130] == 1 && ClickCount[130] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-532,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[131] == 1 && ClickCount[131] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-510,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[132] == 1 && ClickCount[132] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-488,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[133] == 1 && ClickCount[133] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-466,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[134] == 1 && ClickCount[134] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-445,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[135] == 1 && ClickCount[135] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-424,QString::fromLocal8Bit("IC'"));
+    }
+
+    if(judge[136] == 1 && ClickCount[136] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-401,QString::fromLocal8Bit("支路9交流电流"));
+    }
+    if(judge[137] == 1 && ClickCount[137] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-381,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[138] == 1 && ClickCount[138] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-359,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[139] == 1 && ClickCount[139] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-339,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[140] == 1 && ClickCount[140] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-318,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[141] == 1 && ClickCount[141] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-297,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[142] == 1 && ClickCount[142] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-277,QString::fromLocal8Bit("IC'"));
+    }
+
+    if(judge[143] == 1 && ClickCount[143] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-251,QString::fromLocal8Bit("支路10交流电流"));
+    }
+    if(judge[144] == 1 && ClickCount[144] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-231,QString::fromLocal8Bit("IA"));
+    }
+    if(judge[145] == 1 && ClickCount[145] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-210,QString::fromLocal8Bit("IB"));
+    }
+    if(judge[146] == 1 && ClickCount[146] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-189,QString::fromLocal8Bit("IC"));
+    }
+    if(judge[147] == 1 && ClickCount[147] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-167,QString::fromLocal8Bit("IA'"));
+    }
+    if(judge[148] == 1 && ClickCount[148] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-147,QString::fromLocal8Bit("IB'"));
+    }
+    if(judge[149] == 1 && ClickCount[149] % 2 == 1)
+    {
+        painter->drawText(PositionX2,-126,QString::fromLocal8Bit("IC'"));
     }
 }
 
@@ -1118,6 +1325,317 @@ void BackImage::mousePressEvent(QGraphicsSceneMouseEvent *event)
         {
             judge[100] = 1;
             ClickCount[100]++;
+            update();
+        }
+
+        /*************************支路4**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -1176.8 && event->pos().y() <= -1156.14)
+        {
+            judge[101] = 1;
+            ClickCount[101]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1154.32 && event->pos().y() <= -1134.84)
+        {
+            judge[102] = 1;
+            ClickCount[102]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1133.26 && event->pos().y() <= -1113.26)
+        {
+            judge[103] = 1;
+            ClickCount[103]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1112.41 && event->pos().y() <= -1092.41)
+        {
+            judge[104] = 1;
+            ClickCount[104]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1090.61 && event->pos().y() <= -1070.61)
+        {
+            judge[105] = 1;
+            ClickCount[105]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1069.02 && event->pos().y() <= -1049.02)
+        {
+            judge[106] = 1;
+            ClickCount[106]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1048.43 && event->pos().y() <= -1027.43)
+        {
+            judge[107] = 1;
+            ClickCount[107]++;
+            update();
+        }
+
+        /*************************支路5**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -1024.8 && event->pos().y() <= -1004.14)
+        {
+            judge[108] = 1;
+            ClickCount[108]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -1003.32 && event->pos().y() <= -983.84)
+        {
+            judge[109] = 1;
+            ClickCount[109]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -982.26 && event->pos().y() <= -962.26)
+        {
+            judge[110] = 1;
+            ClickCount[110]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -960.41 && event->pos().y() <= -940.41)
+        {
+            judge[111] = 1;
+            ClickCount[111]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -939.61 && event->pos().y() <= -919.61)
+        {
+            judge[112] = 1;
+            ClickCount[112]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -917.02 && event->pos().y() <= -897.02)
+        {
+            judge[113] = 1;
+            ClickCount[113]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -896.43 && event->pos().y() <= -876.43)
+        {
+            judge[114] = 1;
+            ClickCount[114]++;
+            update();
+        }
+
+        /*************************支路6**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -874.8 && event->pos().y() <= -854.14)
+        {
+            judge[115] = 1;
+            ClickCount[115]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -853.32 && event->pos().y() <= -833.84)
+        {
+            judge[116] = 1;
+            ClickCount[116]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -832.26 && event->pos().y() <= -812.26)
+        {
+            judge[117] = 1;
+            ClickCount[117]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -811.41 && event->pos().y() <= -791.41)
+        {
+            judge[118] = 1;
+            ClickCount[118]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -789.61 && event->pos().y() <= -769.61)
+        {
+            judge[119] = 1;
+            ClickCount[119]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -767.02 && event->pos().y() <= -747.02)
+        {
+            judge[120] = 1;
+            ClickCount[120]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -746.43 && event->pos().y() <= -726.43)
+        {
+            judge[121] = 1;
+            ClickCount[121]++;
+            update();
+        }
+
+        /*************************支路7**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -724.8 && event->pos().y() <= -704.14)
+        {
+            judge[122] = 1;
+            ClickCount[122]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -703.32 && event->pos().y() <= -683.84)
+        {
+            judge[123] = 1;
+            ClickCount[123]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -682.26 && event->pos().y() <= -662.26)
+        {
+            judge[124] = 1;
+            ClickCount[124]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -661.41 && event->pos().y() <= -641.41)
+        {
+            judge[125] = 1;
+            ClickCount[125]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -639.61 && event->pos().y() <= -619.61)
+        {
+            judge[126] = 1;
+            ClickCount[126]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -617.02 && event->pos().y() <= -597.02)
+        {
+            judge[127] = 1;
+            ClickCount[127]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -597.43 && event->pos().y() <= -577.43)
+        {
+            judge[128] = 1;
+            ClickCount[128]++;
+            update();
+        }
+
+        /*************************支路8**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -575.8 && event->pos().y() <= -555.14)
+        {
+            judge[129] = 1;
+            ClickCount[129]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -553.32 && event->pos().y() <= -533.84)
+        {
+            judge[130] = 1;
+            ClickCount[130]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -532.26 && event->pos().y() <= -512.26)
+        {
+            judge[131] = 1;
+            ClickCount[131]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -511.41 && event->pos().y() <= -491.41)
+        {
+            judge[132] = 1;
+            ClickCount[132]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -489.61 && event->pos().y() <= -469.61)
+        {
+            judge[133] = 1;
+            ClickCount[133]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -467.02 && event->pos().y() <= -447.02)
+        {
+            judge[134] = 1;
+            ClickCount[134]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -446.43 && event->pos().y() <= -426.43)
+        {
+            judge[135] = 1;
+            ClickCount[135]++;
+            update();
+        }
+
+
+
+
+        /*************************支路9**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -423.8 && event->pos().y() <= -403.14)
+        {
+            judge[136] = 1;
+            ClickCount[136]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -402.32 && event->pos().y() <= -382.84)
+        {
+            judge[137] = 1;
+            ClickCount[137]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -381.26 && event->pos().y() <= -361.26)
+        {
+            judge[138] = 1;
+            ClickCount[138]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -360.41 && event->pos().y() <= -340.41)
+        {
+            judge[139] = 1;
+            ClickCount[139]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -338.61 && event->pos().y() <= -318.61)
+        {
+            judge[140] = 1;
+            ClickCount[140]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -317.02 && event->pos().y() <= -297.02)
+        {
+            judge[141] = 1;
+            ClickCount[141]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -296.43 && event->pos().y() <= -276.43)
+        {
+            judge[142] = 1;
+            ClickCount[142]++;
+            update();
+        }
+
+        /*************************支路10**************************/
+        if(event->pos().x()>=787 && event->pos().x()<=898 && event->pos().y()>= -274.8 && event->pos().y() <= -254.14)
+        {
+            judge[143] = 1;
+            ClickCount[143]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -253.32 && event->pos().y() <= -233.84)
+        {
+            judge[144] = 1;
+            ClickCount[144]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -231.26 && event->pos().y() <= -211.26)
+        {
+            judge[145] = 1;
+            ClickCount[145]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -211.41 && event->pos().y() <= -191.41)
+        {
+            judge[146] = 1;
+            ClickCount[146]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -189.61 && event->pos().y() <= -169.61)
+        {
+            judge[147] = 1;
+            ClickCount[147]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -168.02 && event->pos().y() <= -148.02)
+        {
+            judge[148] = 1;
+            ClickCount[148]++;
+            update();
+        }
+        if(event->pos().x()>=822 && event->pos().x()<=865 && event->pos().y()>= -146.43 && event->pos().y() <= -126.43)
+        {
+            judge[149] = 1;
+            ClickCount[149]++;
             update();
         }
 
