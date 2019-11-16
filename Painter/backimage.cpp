@@ -36,9 +36,9 @@ void BackImage::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
                     QWidget *)
 {
     painter->drawPixmap(-m_pix.width() / 2, -m_pix.height() / 2, m_pix);
-    QFont font1("宋体",30,QFont::Normal,true);
+    QFont font1("宋体",30,100);
     font1.setLetterSpacing(QFont::AbsoluteSpacing, 5);
-    painter->setPen(RGB(250,206,135));
+    painter->setPen(Qt::black);
     painter->setFont(font1);
     /***********************左边图纸显示文字**********************/
 

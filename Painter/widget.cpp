@@ -34,7 +34,7 @@ void Widget::on_m_BackPicture_clicked()
 
 void Widget::on_m_PDF1_clicked()
 {
-    QString filename = "file:///C:/Users/Administrator/Desktop/恒凯电子科技数据采集卡选型手册2019.pdf";
+    QString filename = "file:///C:/Users/Administrator/Desktop/Qt_painter/Painter/resource/说明书.pdf";
     QDesktopServices::openUrl(QUrl::fromLocalFile(filename));
 
     /*
@@ -57,7 +57,8 @@ void Widget::on_m_PDF2_clicked()
     path2 = path2 + "Painter/resource/恒凯电子科技数据采集卡选型手册2019.pdf";
     path1 = path1 + path2;
     qDebug()<<path1;
-    QDesktopServices::openUrl(path1);
+    QString filename = "file:///C:/Users/Administrator/Desktop/Qt_painter/Painter/resource/图纸.pdf";
+    QDesktopServices::openUrl(QUrl::fromLocalFile(filename));
 }
 
 void Widget::recvShowPicSignal(int num,QImage image)
