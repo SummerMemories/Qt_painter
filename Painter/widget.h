@@ -1,4 +1,4 @@
-#ifndef WIDGET_H
+﻿#ifndef WIDGET_H
 #define WIDGET_H
 #include "imagewidget.h"
 #include "backimage.h"
@@ -28,14 +28,20 @@ public:
 
     void recvShowPicSignal(int num, QImage image);
 
+    void ADDLogo();
+
 private slots:
     void on_m_FontPicture_clicked();
 
     void on_m_BackPicture_clicked();
 
+    void on_m_PDF2_clicked();
+
+    void on_m_PDF3_clicked();
+
     void on_m_PDF1_clicked();
 
-    void on_m_PDF2_clicked();
+    void on_m_PDF4_clicked();
 
 private:
     Ui::Widget *ui;

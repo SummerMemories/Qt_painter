@@ -1,9 +1,10 @@
 ﻿#include "widget.h"
 #include "ui_widget.h"
 #include <QGraphicsRectItem>
-
+#include <QApplication>
 #include <QFileDialog>
 #include <QLabel>
+#include <QMessageBox>
 #pragma execution_character_set("utf-8")
 
 Widget::Widget(QWidget *parent) :
@@ -11,6 +12,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    ADDLogo();
     this->showMaximized();
     m_thread = new LoadImg(&img1, &img2);
     m_thread->start();
@@ -20,6 +22,14 @@ Widget::~Widget()
 {
     m_thread->exit();
     delete ui;
+}
+
+void Widget::ADDLogo()
+{
+    QPixmap *pixmap = new QPixmap(":/resource/3.png");
+    pixmap->scaled(ui->label->size(), Qt::KeepAspectRatio);
+    ui->label->setScaledContents(true);
+    ui->label->setPixmap(*pixmap);
 }
 
 void Widget::on_m_FontPicture_clicked()
@@ -34,8 +44,22 @@ void Widget::on_m_BackPicture_clicked()
 
 void Widget::on_m_PDF1_clicked()
 {
-    QString filename = "file:///C:/Users/Administrator/Desktop/Qt_painter/Painter/resource/说明书.pdf";
-    QDesktopServices::openUrl(QUrl::fromLocalFile(filename));
+    QString path1 = "file:///";
+    QString path2 = QApplication::applicationDirPath();
+    path2 = path2 + "/定值单.pdf";
+    path1 = path1 + path2;
+    qDebug()<<path1;
+    QDesktopServices::openUrl(QUrl::fromLocalFile(path1));
+}
+
+void Widget::on_m_PDF2_clicked()
+{
+    QString path1 = "file:///";
+    QString path2 = QApplication::applicationDirPath();
+    path2 = path2 + "/说明书.pdf";
+    path1 = path1 + path2;
+    qDebug()<<path1;
+    QDesktopServices::openUrl(QUrl::fromLocalFile(path1));
 
     /*
      string s = qstr.toStdString();
@@ -43,22 +67,30 @@ void Widget::on_m_PDF1_clicked()
     */
 }
 
-void Widget::on_m_PDF2_clicked()
+void Widget::on_m_PDF3_clicked()
 {
 
     QString path1 = "file:///";
+    QString path2 = QApplication::applicationDirPath();
 
-    std::string flag = "build";
-    QString path2 = QDir::currentPath();
-    std::string p = path2.toStdString();
-    std::string::size_type nPos = p.find(flag);
-    p = p.substr(0, nPos);
-    path2 = QString::fromStdString(p);
-    path2 = path2 + "Painter/resource/恒凯电子科技数据采集卡选型手册2019.pdf";
+    //std::string p = path2.toStdString();
+    //std::string::size_type nPos = p.find(flag);
+    //p = p.substr(0, nPos);
+    //path2 = QString::fromStdString(p);
+    path2 = path2 + "/图纸.pdf";
     path1 = path1 + path2;
     qDebug()<<path1;
-    QString filename = "file:///C:/Users/Administrator/Desktop/Qt_painter/Painter/resource/图纸.pdf";
-    QDesktopServices::openUrl(QUrl::fromLocalFile(filename));
+    QDesktopServices::openUrl(QUrl::fromLocalFile(path1));
+}
+
+void Widget::on_m_PDF4_clicked()
+{
+    QString path1 = "file:///";
+    QString path2 = QApplication::applicationDirPath();
+    path2 = path2 + "/操作说明.pdf";
+    path1 = path1 + path2;
+    qDebug()<<path1;
+    QDesktopServices::openUrl(QUrl::fromLocalFile(path1));
 }
 
 void Widget::recvShowPicSignal(int num,QImage image)

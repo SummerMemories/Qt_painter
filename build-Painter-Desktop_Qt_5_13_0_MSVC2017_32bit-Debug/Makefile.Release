@@ -186,7 +186,8 @@ release\qrc_resource.obj: ..\Painter\resource.qrc \
 		..\Painter\resource\2.jpg \
 		..\Painter\resource\close_normal.png \
 		..\Painter\resource\min_hover.png \
-		..\Painter\resource\1.jpg
+		..\Painter\resource\1.jpg \
+		..\Painter\resource\3.png
 	D:\Qt\Qt5\5.13.0\msvc2017\bin\rcc.exe -name resource ..\Painter\resource.qrc -pass 1 -o release/qrc_resource.cpp 
 	 cl $(CXXFLAGS) -c release/qrc_resource.cpp -Forelease/qrc_resource.tmp.obj 
 	 D:\Qt\Qt5\5.13.0\msvc2017\bin\rcc.exe -name resource ..\Painter\resource.qrc -pass 2 -temp release/qrc_resource.tmp.obj -o release\qrc_resource.obj
@@ -2073,12 +2074,17 @@ release\widget.obj: ..\Painter\widget.cpp ..\Painter\widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtGui\QDesktopServices \
 		ui_widget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QGraphicsRectItem \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QApplication \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qapplication.h \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdesktopwidget.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QFileDialog \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qfiledialog.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qdialog.h \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QLabel \
 		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qlabel.h \
-		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qframe.h \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\QMessageBox \
+		D:\Qt\Qt5\5.13.0\msvc2017\include\QtWidgets\qmessagebox.h
 
 release\moc_widget.obj: release\moc_widget.cpp 
 

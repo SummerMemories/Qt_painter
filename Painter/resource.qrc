@@ -8,5 +8,6 @@
         <file>resource/min_press.png</file>
         <file>resource/1.jpg</file>
         <file>resource/2.jpg</file>
+        <file>resource/3.png</file>
     </qresource>
 </RCC>
